@@ -1,7 +1,5 @@
 # Web Design Assignment Solutions
 
-This folder contains 18 separate, self-contained HTML solutions corresponding to the assignments in `WebD Assignment questions.docx`. Each page includes the HTML document structure and any CSS it needs. Open any `.html` file in a browser to view it, or edit it in VS Code.
-
 ## Files
 
 1. `01-basic-structure.html` — HTML5 structure and comment
