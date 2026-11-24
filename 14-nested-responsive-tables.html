@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 14 | Nested and Responsive Tables </title>
+    <style>body{font:16px Arial}table{border-collapse:collapse}th,td{border:1px solid #555;padding:.6rem;vertical-align:top}.scroll{overflow-x:auto;max-width:100%}.wide{min-width:700px}</style>
+  </head>
+  <body>
+    <h1>Nested and Responsive Tables </h1>
+    <h2>Student with subject marks (nested table) </h2>
+    <table>
+      <caption>Student records and marks </caption>
+      <thead>
+        <tr>
+          <th scope="col">Student </th>
+          <th scope="col">ID </th>
+          <th scope="col">Subject marks </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Asha Rao </th>
+          <td>ST104 </td>
+          <td>
+            <table>
+              <caption>Marks for Asha Rao </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Subject </th>
+                  <th scope="col">Marks </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">HTML </th>
+                  <td>88 </td>
+                </tr>
+                <tr>
+                  <th scope="row">CSS </th>
+                  <td>92 </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Wide table with horizontal scrolling </h2>
+    <p>On a narrow screen, scroll this table horizontally. </p>
+    <div class="scroll" role="region" aria-label="Wide course table" tabindex="0">
+      <table class="wide">
+        <caption>Course schedule </caption>
+        <thead>
+          <tr>
+            <th scope="col">Course </th>
+            <th scope="col">Monday </th>
+            <th scope="col">Tuesday </th>
+            <th scope="col">Wednesday </th>
+            <th scope="col">Thursday </th>
+            <th scope="col">Friday </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Web Design </th>
+            <td>HTML </td>
+            <td>CSS </td>
+            <td>Lab </td>
+            <td>Accessibility </td>
+            <td>Review </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

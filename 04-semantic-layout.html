@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 4 | Semantic Layout </title>
+    <style>body{font:16px Arial;max-width:850px;margin:2rem auto;padding:0 1rem}header,nav,main,aside,footer,.div-layout{border:1px solid #789;padding:1rem;margin:.5rem 0}nav a{margin-right:1rem}</style>
+  </head>
+  <body>
+    <header>
+      <h1>Campus Journal </h1>
+      <p>News and ideas from our campus </p>
+    </header>
+    <nav aria-label="Main navigation"><a href="#news">News</a><a href="#about">About</a></nav>
+    <main id="news">
+      <article>
+        <h2>Science fair opens </h2>
+        <p>Students presented projects at the annual fair. </p>
+      </article>
+      <section id="about">
+        <h2>About this page </h2>
+        <p>The header, nav, main, article, section, aside and footer identify their roles. </p>
+      </section>
+    </main>
+    <aside>
+      <h2>Related </h2>
+      <p>Next event: Friday at 10 a.m. </p>
+    </aside>
+    <footer>
+      <p>&copy; 2026 Campus Journal </p>
+    </footer>
+    <div class="div-layout"><strong>Non-semantic comparison:</strong> A div can group content, but it does not communicate a specific role by itself. </div>
+  </body>
+</html>

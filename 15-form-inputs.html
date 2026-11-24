@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 15 | Form Inputs </title>
+    <style>body{font:16px Arial;max-width:650px;margin:2rem auto;padding:0 1rem}label{display:block;margin-top:.8rem}input{margin-top:.25rem}fieldset{margin:1rem 0;padding:1rem}fieldset label{display:inline-block;margin-right:1rem}</style>
+  </head>
+  <body>
+    <h1>Student Profile Form </h1>
+    <form action="#" method="get">
+      <label for="name">Full name </label>
+      <input id="name" name="name" type="text" autocomplete="name">
+      <label for="email">Email address </label>
+      <input id="email" name="email" type="email" autocomplete="email">
+      <label for="password">Password </label>
+      <input id="password" name="password" type="password" autocomplete="new-password">
+      <label for="birthdate">Date of birth </label>
+      <input id="birthdate" name="birthdate" type="date">
+      <label for="photo">Profile photo </label>
+      <input id="photo" name="photo" type="file" accept="image/*">
+      <fieldset>
+        <legend>Study mode </legend>
+        <label>
+          <input type="radio" name="mode" value="on-campus"> On campus </label>
+        <label>
+          <input type="radio" name="mode" value="online"> Online </label>
+      </fieldset>
+      <label>
+        <input type="checkbox" name="updates" value="yes"> Send me course updates </label>
+      <p>
+        <button type="submit">Save profile </button>
+        <button type="reset">Clear form </button>
+      </p>
+    </form>
+  </body>
+</html>

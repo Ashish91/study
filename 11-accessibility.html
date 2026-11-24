@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment 11 | Accessibility </title>
+    <style>body{font:18px/1.6 Arial;max-width:760px;margin:auto;padding:1rem}a:focus,button:focus{outline:3px solid #d00;outline-offset:3px}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:white;padding:1rem;z-index:2}</style>
+  </head>
+  <body><a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+      <h1>Accessible Campus Garden </h1>
+      <nav aria-label="Main navigation"><a href="#about">About</a> | <a href="#contact">Contact</a></nav>
+    </header>
+    <main id="main">
+      <section id="about">
+        <h2>About the garden </h2>
+        <img src="https://placehold.co/600x300/355e3b/ffffff?text=Campus+Garden" alt="Raised garden beds with leafy plants on campus" width="600" height="300" style="max-width:100%;height:auto">
+        <p>Our garden is open to students and staff. </p>
+        <button type="button" aria-label="Show garden visiting hours">Show visiting hours </button>
+      </section>
+      <section id="contact">
+        <h2>Contact </h2>
+        <p>Email <a href="mailto:garden@example.edu">the garden team</a>. </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Campus Garden </p>
+    </footer>
+  </body>
+</html>
